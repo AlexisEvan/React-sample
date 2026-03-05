@@ -23,5 +23,7 @@ It can add tasks, confirm task completion (using checkboxes), and delete tasks.
 
 <img width="308" height="153" alt="截屏2026-03-05 下午9 15 45" src="https://github.com/user-attachments/assets/511c9b61-93cf-4828-873b-8c49b89f135c" />
 
+
+
 <img width="409" height="311" alt="截屏2026-03-05 下午9 16 12" src="https://github.com/user-attachments/assets/a1abba25-9896-4bd6-9f15-66553018b8d0" />
 
