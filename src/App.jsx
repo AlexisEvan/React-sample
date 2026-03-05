@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./styles.css";
 import { NewTodoForm } from "./newtodoform";
+import { TodoList } from "./todolist";
 
 export default function App() {
   const [todos, setTodos] = useState([]);
@@ -31,29 +32,7 @@ export default function App() {
       <NewTodoForm onSubmit={addTodo} />
 
       <h1 className="header">Todo List</h1>
-
-      <ul className="list">
-        {todos.map((todo) => (
-          <li key={todo.id} className="todo">
-            <label>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={(e) => toggleTodo(todo.id, e.target.checked)}
-              />
-              {todo.title}
-            </label>
-
-            <button
-              className="btn delete"
-              onClick={() => deleteTodo(todo.id)}
-              type="button"
-            >
-            Delete
-            </button>
-          </li>
-        ))}
-      </ul>
+      <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />
     </div>
   );
 }
